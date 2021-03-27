@@ -36,9 +36,9 @@ body {
       rgba(11, 29, 38, 0) 0%,
       #0b1d26 61.38%
     ),
-    url('../../images/bg-man.png'), url('../../images/MG.png'),
+    url('./../images/bg-man.png'), url('./../images/MG.png'),
     linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0b1d26 108.93%),
-    url('../../images/bg-sky.png');
+    url('./../images/bg-sky.png');
   background-size: 1920px 700px, 1920px, 1920px, 1920px, 1920px;
   background-position: 0 1200px, 0 768px, 0 464px, 0 0, 0 0;
   background-repeat: no-repeat;
