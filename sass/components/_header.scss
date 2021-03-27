@@ -1,0 +1,55 @@
+.logo {
+  font-family: Chronicle Display;
+  font-size: 32px;
+  line-height: 1.19;
+  text-transform: uppercase;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 1760px;
+  padding-top: 64px;
+  padding-bottom: 200px;
+}
+
+.navigation-menu {
+  display: flex;
+
+  &__item {
+    font-size: 18px;
+    line-height: 1.22;
+
+    & + & {
+      margin-left: 40px;
+    }
+  }
+}
+
+.logining {
+  &__icon {
+    vertical-align: sub;
+    margin-right: 8px;
+    fill: currentColor;
+  }
+  &__btn {
+    padding: 0;
+    margin: 0;
+
+    border: none;
+
+    background-color: transparent;
+    color: $primary-text-color;
+
+    font-family: Gilroy;
+    font-size: 17px;
+    line-height: 1.24;
+
+    cursor: pointer;
+  }
+}

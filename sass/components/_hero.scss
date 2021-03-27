@@ -1,0 +1,68 @@
+.social {
+  position: absolute;
+  top: 70px;
+  left: 80px;
+  &__link {
+    fill: currentColor;
+  }
+  &__text {
+    display: block;
+    writing-mode: vertical-rl;
+  }
+  &__list {
+    margin-top: 24px;
+  }
+  &__item {
+    & + & {
+      margin-top: 24px;
+    }
+  }
+}
+
+.hero {
+  margin-bottom: 843px;
+  &__container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 1760px;
+  }
+
+  &__content {
+    max-width: 950px;
+  }
+  &__title {
+    @extend %little-orange-text;
+    margin-bottom: 32px;
+  }
+  &__title::before {
+    content: '';
+    display: inline-block;
+    width: 72px;
+    height: 2px;
+    background-color: $secondary-text-color;
+    vertical-align: super;
+    margin-right: 32px;
+  }
+  &__text {
+    margin-bottom: 32px;
+
+    font-family: Chronicle Display;
+    font-weight: 600;
+    font-size: 88px;
+    line-height: 1.14;
+    text-transform: capitalize;
+  }
+
+  &__skipp {
+    line-height: 1.22;
+  }
+  &__icon {
+    vertical-align: middle;
+    fill: currentColor;
+    margin-left: 16px;
+  }
+}

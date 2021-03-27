@@ -1,0 +1,47 @@
+.footer {
+  margin-bottom: 120px;
+  &__container {
+    display: flex;
+  }
+  &__logo {
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+  &__do-it {
+    display: block;
+    width: 303px;
+
+    margin-bottom: 122px;
+  }
+  &__copyright {
+    display: block;
+    margin-left: 6px;
+
+    font-weight: 500;
+
+    opacity: 0.5;
+  }
+}
+.more {
+  display: flex;
+  margin-left: auto;
+  &__list {
+    margin-top: 24px;
+  }
+  &__block {
+    & + & {
+      margin-left: 212px;
+    }
+  }
+  &__title {
+    font-size: 24px;
+
+    color: $secondary-text-color;
+  }
+  &__item {
+    font-weight: 500;
+    & + & {
+      margin-top: 16px;
+    }
+  }
+}

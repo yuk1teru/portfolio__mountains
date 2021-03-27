@@ -1,0 +1,27 @@
+.slider {
+  position: absolute;
+  top: 326px;
+  bottom: 0;
+  right: 80px;
+
+  &__wrapper {
+    position: sticky;
+    top: 326px;
+    width: 77px;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  &__item {
+    line-height: 3.3333;
+    border-right: 3px solid rgba(255, 255, 255, 0.5);
+  }
+  &__item:hover,
+  &__item:focus {
+    border-color: #ffffff;
+  }
+  &__link {
+    display: block;
+    height: 100%;
+  }
+}
