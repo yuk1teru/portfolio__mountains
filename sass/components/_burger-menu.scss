@@ -1,0 +1,57 @@
+.menu {
+  display: none;
+  position: relative;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+  &__button {
+    @media screen and (max-width: 767px) {
+      position: relative;
+      display: block;
+      width: 50px;
+      height: 4px;
+
+      margin: 0;
+      padding: 0;
+
+      border: none;
+      background-color: #ffffff;
+      &::before,
+      &::after {
+        content: '';
+
+        position: absolute;
+
+        width: 50px;
+        height: 4px;
+
+        background-color: #ffffff;
+      }
+      &::before {
+        transform: translateY(-15px);
+      }
+      &::after {
+        transform: translateY(15px);
+      }
+    }
+  }
+}
+
+.drop-menu {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    display: none;
+    &.open {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 200px;
+      height: 100vh;
+      background-color: rgba(11, 29, 38, 0.733);
+      z-index: 1;
+    }
+  }
+}

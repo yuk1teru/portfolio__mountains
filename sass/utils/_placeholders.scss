@@ -6,4 +6,7 @@
   letter-spacing: 6px;
   text-transform: uppercase;
   color: $secondary-text-color;
+  @media screen and (max-width: 767px) {
+    font-size: 10px;
+  }
 }

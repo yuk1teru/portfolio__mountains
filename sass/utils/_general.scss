@@ -21,27 +21,63 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.78;
-  letter-spacing: 0.01em;
   color: $primary-text-color;
+  @media screen and (max-width: 1199px) {
+    font-size: 16px;
+  }
 }
 .wrapper {
   position: relative;
   margin: 0 auto;
 
-  max-width: 1920px;
-
-  background-color: #0b1d26;
-  background-image: linear-gradient(
-      180deg,
-      rgba(11, 29, 38, 0) 0%,
-      #0b1d26 61.38%
-    ),
-    url('./../images/bg-man.png'), url('./../images/MG.png'),
-    linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0b1d26 108.93%),
-    url('./../images/bg-sky.png');
-  background-size: 1920px 700px, 1920px, 1920px, 1920px, 1920px;
-  background-position: 0 1200px, 0 768px, 0 464px, 0 0, 0 0;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    min-width: 350px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(11, 29, 38, 0) 0%,
+        #0b1d26 61.38%
+      ),
+      url('./../images/bg-man768х370.png'),
+      url('./../images/mountains768х569.png'),
+      linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0b1d26 108.93%),
+      url('./../images/bg-sky768х445.png');
+
+    background-position: 0 330px, 0 250px, 0 120px, 0 0, 0 0;
+    background-size: 767px 400px, 767px, 767px, 767px 400px, 767px;
+  }
+
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    width: 1200px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(11, 29, 38, 0) 0%,
+        #0b1d26 61.38%
+      ),
+      url('./../images/bg-man1200х579.png'),
+      url('./../images/mountains1200х889.png'),
+      linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0b1d26 108.93%),
+      url('./../images/bg-sky1200х696.png');
+
+    background-position: 0 630px, 0 468px, 0 264px, 0 0, 0 0;
+    background-size: 1200px 600px, 1200px, 1200px, 1200px 600px, 1200px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1920px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(11, 29, 38, 0) 0%,
+        #0b1d26 61.38%
+      ),
+      url('./../images/bg-man.png'), url('./../images/mountains.png'),
+      linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0b1d26 108.93%),
+      url('./../images/bg-sky.png');
+
+    background-position: 0 1200px, 0 768px, 0 464px, 0 0, 0 0;
+    background-size: 1920px 700px, 1920px, 1920px, 1920px 1200px, 1920px;
+  }
 }
 
 a {

@@ -1,42 +1,29 @@
-.social {
-  position: absolute;
-  top: 70px;
-  left: 80px;
-  &__link {
-    fill: currentColor;
-  }
-  &__text {
-    display: block;
-    writing-mode: vertical-rl;
-  }
-  &__list {
-    margin-top: 24px;
-  }
-  &__item {
-    & + & {
-      margin-top: 24px;
-    }
-  }
-}
-
 .hero {
-  margin-bottom: 843px;
   &__container {
     display: flex;
     justify-content: center;
     position: relative;
-    margin: 0 auto;
-    padding-left: 80px;
-    padding-right: 80px;
-    width: 1760px;
   }
 
   &__content {
+    @media screen and (max-width: 767px) {
+      max-width: 250px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      max-width: 530px;
+    }
     max-width: 950px;
   }
   &__title {
     @extend %little-orange-text;
-    margin-bottom: 32px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 13px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 13px;
+      font-size: 18px;
+    }
+    margin-bottom: 26px;
   }
   &__title::before {
     content: '';
@@ -46,6 +33,10 @@
     background-color: $secondary-text-color;
     vertical-align: super;
     margin-right: 32px;
+    @media screen and (max-width: 767px) {
+      width: 40px;
+      margin-right: 13px;
+    }
   }
   &__text {
     margin-bottom: 32px;
@@ -55,10 +46,23 @@
     font-size: 88px;
     line-height: 1.14;
     text-transform: capitalize;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 50px;
+      margin-bottom: 13px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 32px;
+    }
   }
 
   &__skipp {
     line-height: 1.22;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
   &__icon {
     vertical-align: middle;

@@ -1,20 +1,48 @@
 .slider {
   position: absolute;
-  top: 326px;
-  bottom: 0;
-  right: 80px;
 
+  @media screen and (min-width: 768px) {
+    top: 326px;
+    bottom: 0;
+    right: 80px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 210px;
+  }
+  @media screen and (max-width: 767px) {
+    top: 100px;
+    right: 0;
+    bottom: 0;
+  }
   &__wrapper {
     position: sticky;
+
     top: 326px;
-    width: 77px;
+
     text-align: center;
     background-color: transparent;
+    @media screen and (min-width: 768px) {
+      width: 77px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      top: 210px;
+    }
+    @media screen and (max-width: 767px) {
+      top: 30px;
+      right: 0;
+    }
   }
-
+  &__list {
+  }
   &__item {
     line-height: 3.3333;
-    border-right: 3px solid rgba(255, 255, 255, 0.5);
+
+    @media screen and (min-width: 768px) {
+      border-right: 3px solid rgba(255, 255, 255, 0.5);
+    }
+    @media screen and (max-width: 767px) {
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+    }
   }
   &__item:hover,
   &__item:focus {
