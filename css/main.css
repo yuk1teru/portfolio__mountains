@@ -1263,6 +1263,8 @@ a:focus {
     padding: 0;
     border: none;
     background-color: #ffffff;
+    -webkit-transition: background-color 0.2s linear 0.3s;
+    transition: background-color 0.2s linear 0.3s;
   }
   .menu__button::before, .menu__button::after {
     content: '';
@@ -1270,6 +1272,10 @@ a:focus {
     width: 50px;
     height: 4px;
     background-color: #ffffff;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
   .menu__button::before {
     -webkit-transform: translateY(-15px);
@@ -1278,6 +1284,17 @@ a:focus {
   .menu__button::after {
     -webkit-transform: translateY(15px);
             transform: translateY(15px);
+  }
+  .menu__button.open {
+    background-color: transparent;
+  }
+  .menu__button.open::before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .menu__button.open::after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
 }
 
@@ -1292,9 +1309,6 @@ a:focus {
 
 @media screen and (max-width: 767px) {
   .drop-menu {
-    display: none;
-  }
-  .drop-menu.open {
     display: block;
     position: absolute;
     top: 0;
@@ -1303,7 +1317,17 @@ a:focus {
     width: 200px;
     height: 100vh;
     background-color: rgba(11, 29, 38, 0.733);
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+    -webkit-transition: -webkit-transform 0.5s linear;
+    transition: -webkit-transform 0.5s linear;
+    transition: transform 0.5s linear;
+    transition: transform 0.5s linear, -webkit-transform 0.5s linear;
     z-index: 1;
+  }
+  .drop-menu.open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 /*# sourceMappingURL=main.css.map */

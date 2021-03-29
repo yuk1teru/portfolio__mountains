@@ -16,6 +16,8 @@
 
       border: none;
       background-color: #ffffff;
+      transition: background-color 0.2s linear 0.3s;
+
       &::before,
       &::after {
         content: '';
@@ -26,12 +28,22 @@
         height: 4px;
 
         background-color: #ffffff;
+        transition: transform 0.5s ease-in;
       }
       &::before {
         transform: translateY(-15px);
       }
       &::after {
         transform: translateY(15px);
+      }
+      &.open {
+        background-color: transparent;
+      }
+      &.open::before {
+        transform: rotate(-45deg);
+      }
+      &.open::after {
+        transform: rotate(45deg);
       }
     }
   }
@@ -40,18 +52,22 @@
 .drop-menu {
   display: flex;
   align-items: center;
+
   @media screen and (max-width: 767px) {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: rgba(11, 29, 38, 0.733);
+    transform: translateX(-300px);
+    transition: transform 0.5s linear;
+    z-index: 1;
+
     &.open {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 200px;
-      height: 100vh;
-      background-color: rgba(11, 29, 38, 0.733);
-      z-index: 1;
+      transform: translateX(0);
     }
   }
 }
