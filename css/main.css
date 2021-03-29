@@ -844,7 +844,7 @@ a:focus {
 
 @media screen and (max-width: 767px) {
   .slider__wrapper {
-    top: 30px;
+    top: 100px;
     right: 0;
   }
 }
@@ -1162,13 +1162,13 @@ a:focus {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .more {
-    margin-right: 150px;
+    margin-right: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .more {
-    margin-right: 300px;
+    margin-right: 110px;
   }
 }
 
