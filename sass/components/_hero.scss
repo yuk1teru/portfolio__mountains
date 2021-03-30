@@ -9,8 +9,14 @@
     @media screen and (max-width: 767px) {
       max-width: 250px;
     }
+    @media screen and (min-width: 400px) and (max-width: 767px) {
+      max-width: 336px;
+    }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       max-width: 530px;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1400px) {
+      max-width: 630px;
     }
     max-width: 950px;
   }
@@ -49,6 +55,9 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       font-size: 50px;
       margin-bottom: 13px;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1400px) {
+      font-size: 60px;
     }
     @media screen and (max-width: 767px) {
       font-size: 32px;
