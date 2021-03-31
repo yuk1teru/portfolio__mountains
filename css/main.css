@@ -902,8 +902,8 @@ a:focus {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .articles {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 100px;
   }
 }
@@ -942,9 +942,10 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
   margin-bottom: 200px;
 }
 
@@ -965,14 +966,13 @@ a:focus {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .articles__post {
     width: 470px;
-    margin-right: 50px;
+    margin-right: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .articles__post {
     width: 632px;
-    margin-right: 114px;
   }
 }
 
@@ -985,13 +985,8 @@ a:focus {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .articles__item:nth-child(2) .articles__post {
-    margin-left: 180px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .articles__item:nth-child(2) .articles__post {
-    margin-left: 264px;
+    margin-left: 10px;
+    margin-right: 0;
   }
 }
 
@@ -1005,10 +1000,15 @@ a:focus {
   opacity: 0.1;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .articles__number {
+    left: 0px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .articles__number {
     font-size: 170px;
-    left: -100px;
   }
 }
 
@@ -1107,7 +1107,10 @@ a:focus {
 
 @media screen and (min-width: 1200px) {
   .footer__info {
-    margin-left: 150px;
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+    padding-left: 229px;
   }
 }
 
@@ -1143,8 +1146,7 @@ a:focus {
 
 @media screen and (min-width: 768px) {
   .footer__container {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    width: 100%;
   }
 }
 
@@ -1194,15 +1196,15 @@ a:focus {
 
 @media screen and (min-width: 1200px) {
   .more {
-    margin-right: 110px;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
   }
 }
 
 @media screen and (max-width: 767px) {
   .more {
     position: relative;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     margin-bottom: 40px;
     padding-top: 30px;
   }
@@ -1228,8 +1230,10 @@ a:focus {
 }
 
 @media screen and (min-width: 1200px) {
-  .more__block + .more__block {
-    margin-left: 212px;
+  .more__block {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
