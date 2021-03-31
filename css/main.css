@@ -454,7 +454,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .wrapper {
-    background-image: url(./../../images/bg.jpg);
+    background-image: url(./../images/bg.jpg);
     background-size: 1920px;
   }
 }
