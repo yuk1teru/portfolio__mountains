@@ -430,15 +430,14 @@ body {
 .wrapper {
   position: relative;
   margin: 0 auto;
-  overflow-x: hidden;
   background-repeat: no-repeat;
-  height: 100%;
   width: 100%;
 }
 
 @media screen and (max-width: 767px) {
   .wrapper {
-    max-width: 350px;
+    min-width: 350px;
+    max-width: 767px;
     background-image: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0b1d26 61.38%), url("./../images/bg-man768х370.png"), url("./../images/mountains768х569.png"), linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0b1d26 108.93%), url("./../images/bg-sky768х445.png");
     background-position: 0 330px, 0 250px, 0 120px, 0 0, 0 0;
     background-size: 767px 400px, 767px, 767px, 767px 400px, 767px;
@@ -457,8 +456,9 @@ body {
 @media screen and (min-width: 1200px) {
   .wrapper {
     max-width: 1920px;
-    background-image: url(./../images/bg.jpg);
-    background-size: 1920px;
+    background-image: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0b1d26 61.38%), url("./../images/bg-man.png"), url("./../images/mountains.png"), linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0b1d26 108.93%), url("./../images/bg-sky.png");
+    background-position: 0 1200px, 0 768px, 0 464px, 0 0, 0 0;
+    background-size: 1920px 700px, 1920px, 1920px, 1920px 1200px, 1920px;
   }
 }
 
@@ -847,7 +847,6 @@ a:focus {
   .slider {
     top: 100px;
     right: 0;
-    bottom: 0;
   }
 }
 
