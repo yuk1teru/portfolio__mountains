@@ -8,10 +8,12 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     top: 210px;
+    right: 10px;
   }
   @media screen and (max-width: 767px) {
     top: 100px;
     right: 0;
+    bottom: 0;
   }
   &__wrapper {
     position: sticky;

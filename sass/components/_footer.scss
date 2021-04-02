@@ -1,14 +1,10 @@
 .footer {
   margin-bottom: 120px;
-  padding-right: 40px;
-  &__info {
-    @media screen and(min-width:1200px) {
-      flex-grow: 3;
-      padding-left: 229px;
-    }
 
+  &__info {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-left: 50px;
+      width: 40%;
+      padding-left: 40px;
     }
     @media screen and (max-width: 767px) {
       margin-left: 0;
@@ -18,12 +14,17 @@
       margin-bottom: 20px;
       text-align: center;
     }
+    @media screen and(min-width:1200px) {
+      width: 25%;
+      padding-left: 40px;
+    }
   }
   &__container {
     display: flex;
+    max-width: 1492px;
+    margin: 0 auto;
+    justify-content: space-between;
     @media screen and (min-width: 768px) {
-      // justify-content: space-around;
-      width: 100%;
     }
     @media screen and (max-width: 767px) {
       flex-direction: column;
@@ -39,7 +40,6 @@
 
     @media screen and (min-width: 768px) {
       margin-bottom: 122px;
-      width: 303px;
     }
   }
   &__copyright {
@@ -53,15 +53,17 @@
 }
 .more {
   display: flex;
+  justify-content: space-between;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-right: 60px;
+    width: 60%;
   }
   @media screen and(min-width:1200px) {
-    flex-grow: 2;
+    width: 45%;
   }
   @media screen and (max-width: 767px) {
     position: relative;
-
+    justify-content: space-around;
     margin-bottom: 40px;
     padding-top: 30px;
     &::before {
@@ -82,18 +84,15 @@
     }
   }
   &__block {
-    @media screen and(min-width:1200px) {
-      flex-grow: 1;
-    }
-    & + & {
-      @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-left: 112px;
-      }
+    @media screen and (min-width: 768px) {
+      width: 40%;
     }
   }
   &__title {
     font-size: 24px;
-
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 20px;
+    }
     color: $secondary-text-color;
     @media screen and (max-width: 767px) {
       font-size: 14px;

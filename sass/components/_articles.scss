@@ -1,4 +1,7 @@
 .articles {
+  max-width: 1462px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-left: 10px;
     padding-right: 10px;
@@ -52,8 +55,8 @@
         margin-left: 10px;
         margin-right: 0;
       }
-      @media screen and (min-width: 1200px) {
-        // margin-left: 264px;
+      @media screen and (min-width: 1920px) {
+        margin-left: 265px;
       }
     }
   }
