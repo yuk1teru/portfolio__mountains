@@ -781,6 +781,7 @@ a:focus {
   font-weight: 600;
   font-size: 88px;
   line-height: 1.14;
+  text-transform: none;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
