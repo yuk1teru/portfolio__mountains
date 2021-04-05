@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Горы</title>
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/main.min.css" />
+    
   </head>
   <body>
     <div class="wrapper">
@@ -61,7 +63,7 @@
           </div>
         </div>
         <div class="hero">
-          <div class="hero__container">
+          <div class="hero__container wow fadeInUp">
            
             <div class="hero__content">
               <h1 class="hero__title">Путеводитель</h1>
@@ -84,12 +86,12 @@
         </div>
       </header>
 
-      <main class="main">
+      <main class="main ">
         <article class="articles" id="articles">
           
             <ul class="articles__list">
               <li class="articles__item" >
-                <div class="articles__post">
+                <div class="articles__post wow fadeInLeft" >
                   <p class="articles__number" id="01">01</p>
                   <p class="articles__topic">начать</p>
                   <h2 class="articles__title">Какой ты уровень туриста?</h2>
@@ -113,7 +115,7 @@
                     </svg>
                   </a>
                 </div>
-                <picture class="articles__image">
+                <picture class="articles__image wow fadeInRight" >
                   <source srcset="./images/01_200х254.jpg" type="image/jpeg" media="(max-width:767px)"> 
                   <source srcset="./images/01_370х471.jpg" type="image/jpeg" media=" (max-width:1299px)"> 
                   <source srcset="./images/01.jpg" type="image/jpeg" media="(min-width:1300px)"> 
@@ -126,7 +128,7 @@
               </li>
 
               <li class="articles__item" >
-                <div class="articles__post" >
+                <div class="articles__post wow fadeInRight" >
                   <p class="articles__number" id="02">02</p>
                   <p class="articles__topic">Основы пешего туризма</p>
                   <h2 class="articles__title">
@@ -151,7 +153,7 @@
                     </svg>
                   </a>
                 </div>
-                <picture class="articles__image">
+                <picture class="articles__image wow fadeInLeft" >
                   <source srcset="./images/02_200х254.jpg" type="image/jpeg" media="(max-width:767px)"> 
                   <source srcset="./images/02_370х471.jpg" type="image/jpeg" media="(min-width:768px) and (max-width:1299px)"> 
                   <source srcset="./images/02.jpg" type="image/jpeg" media="(min-width:1300px)"> 
@@ -164,7 +166,7 @@
               </li>
 
               <li class="articles__item" >
-                <div class="articles__post">
+                <div class="articles__post wow fadeInLeft" >
                   <p class="articles__number" id="03">03</p>
                   <p class="articles__topic">Ключ твоего пути</p>
                   <h2 class="articles__title">Смотри в карту маршрута</h2>
@@ -187,7 +189,7 @@
                     </svg>
                   </a>
                 </div>
-               <picture class="articles__image">
+               <picture class="articles__image wow fadeInRight">
                   <source srcset="./images/03_200х254.jpg" type="image/jpeg" media="(max-width:767px)"> 
                   <source srcset="./images/03_370х471.jpg" type="image/jpeg" media="(min-width:768px) and (max-width:1299px)"> 
                   <source srcset="./images/03.jpg" type="image/jpeg" media="(min-width:1300px)"> 
@@ -201,7 +203,7 @@
         </article>
       </main>
 
-      <footer class="footer">
+      <footer class="footer wow fadeIn">
         <div class="footer__container">
           <div class="footer__info">
             <a href="" class="logo footer__logo"
@@ -276,5 +278,9 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="./js/wow.min.js"></script>
+     <script>
+              new WOW().init();
+              </script>
   </body>
 </html>
